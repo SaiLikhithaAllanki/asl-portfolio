@@ -5,11 +5,19 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-import HeroComponent from "../components/herocomp"
+import HeroComponent from "../components/Hero/HeroComponent"
+import AboutMeComp from "../components/AboutMe/AboutMeComp"
+import TechComp from "../components/Technology/TechComp"
+import ProjectsComp from "../components/Projects/ProjectsComp"
+import ContactMeComp from "../components/ContactMe/ContactMeComp"
 
 const IndexPage = () => (
   <Layout>
     <HeroComponent></HeroComponent>
+    <AboutMeComp></AboutMeComp>
+    <TechComp></TechComp>
+    <ProjectsComp></ProjectsComp>
+    <ContactMeComp></ContactMeComp>
   </Layout>
 )
 
