@@ -1,0 +1,24 @@
+.p_container {
+  align-items: center;
+  padding: 150px;
+}
+.p_title {
+  text-align: center;
+}
+.p_all_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p_card {
+  text-align: center;
+}
+.p_card_content {
+  background-color: #edf2f4;
+  color: #2b2d42;
+}
+.Project_image {
+  background-color: #2b2d42;
+  object-fit: cover;
+  width: 345px;
+}

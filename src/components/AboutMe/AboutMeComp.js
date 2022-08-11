@@ -1,27 +1,29 @@
 import { Card } from "@material-ui/core"
 import React from "react"
 import "./AboutMe.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutMeComp = () => {
   return (
-    <Card className="card_container">
-      <h1>About Me </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        sed odio quis velit vehicula fringilla. Duis quis ligula eu diam rutrum
-        tincidunt ultrices sed mauris. Nulla sollicitudin pretium lectus eget
-        congue. Vestibulum nec ex feugiat, lobortis libero ut, congue urna. Duis
-        eu laoreet risus. In suscipit enim in cursus posuere. Donec tincidunt
-        tortor eget orci posuere, eu molestie ipsum rhoncus. Praesent hendrerit
-        ullamcorper magna vitae egestas. In hac habitasse platea dictumst.
-        Maecenas ut facilisis purus. Proin auctor sit amet ligula in semper.
-      </p>
-      <h1>Experience</h1>
-      <ul>
-        <li>Wipro</li>
-        <li>Spruce Technologies</li>
-      </ul>
-    </Card>
+    <div className="a_main_container" id="about_me">
+      <Card className="card_container">
+        <div className="a_left_column">
+          <StaticImage
+            className="about_me_icon"
+            src="C:\Users\Allanki Sai Likhitha\gatsby-starter-default\src\images\Authentication-bro-removebg-preview.png"
+          ></StaticImage>
+          <h1>About Me </h1>
+        </div>
+        <div>
+          <p className="a_description">
+            My name is Likhitha, and I am currently pursuing a Master of Science
+            in Computer Science at George Mason University. I'm working hard to
+            reach my goal of becoming a Full Stack Front End Developer. Actively
+            seeking excellent opportunities. I am a dedicated and hard worker.
+          </p>
+        </div>
+      </Card>
+    </div>
   )
 }
 export default AboutMeComp

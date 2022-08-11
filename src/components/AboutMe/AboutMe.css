@@ -1,4 +1,37 @@
 .card_container {
-  margin: 40px;
+  /* margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px; */
+  margin: 100px;
   padding: 50px;
+  display: inline-flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  align-items: center;
+
+  color: #2b2d42;
+}
+.card_container > div {
+  margin: 60px;
+}
+.about_me_icon {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  /* border-radius: 50%;
+  border: 1px solid #2b2d42;
+  box-shadow: 0 0 2px 1px #2b2d42; */
+}
+.a_main_container {
+  display: flex;
+  align-items: center;
+}
+.a_description {
+  font-size: 20px;
+}
+.a_left_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -222,3 +222,12 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+.footer_styles {
+  margin-top: var(--space-5);
+  font-size: var(--font-sm);
+  text-align: center;
+  background-color: #edf2f4;
+  color: #2b2d42;
+  margin: 0 auto;
+  padding: var(--space-4) var(--size-gutter);
+}

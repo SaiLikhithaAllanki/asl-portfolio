@@ -1,0 +1,36 @@
+.e_main_container {
+  background-color: #edf2f4;
+  padding: 60px;
+}
+.e_card_container {
+  margin: 50px;
+  padding: 50px;
+  /* background-color: #edf2f4; */
+  width: auto;
+  height: auto;
+  color: #2b2d42;
+  display: flex;
+  justify-content: space-around;
+}
+
+.e_icon {
+  width: 451px;
+  height: 451px;
+}
+.e_title {
+  text-align: center;
+  color: #2b2d42;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.e_card {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  padding: 20px;
+  width: 400px;
+}
+.e_company_image {
+  width: 100px;
+  height: 100px;
+}
