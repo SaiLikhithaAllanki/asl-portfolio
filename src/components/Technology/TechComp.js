@@ -1,8 +1,8 @@
-import { Button, Chip, Grid, Paper } from "@mui/material"
+import { Chip, Grid } from "@mui/material"
 import React from "react"
-import "./Technology.css"
-import { StaticImage } from "gatsby-plugin-image"
-import { Icon } from "@iconify/react"
+//import "./Technology.css"
+//import { StaticImage } from "gatsby-plugin-image"
+//import { Icon } from "@iconify/react"
 import HTML5 from "../../images/html-5.png"
 import CSS from "../../images/css-3.png"
 import JS from "../../images/js.png"
@@ -16,6 +16,33 @@ import SQL from "../../images/mysql.png"
 import Python from "../../images/python.png"
 import Dv from "../../images/divi.png"
 import Ele from "../../images/elementor.png"
+import styled from "styled-components"
+
+const TechCompStyle = styled.div`
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #edf2f4;
+  .t_chip {
+    background-color: #edf2f4;
+    color: #2b2d42;
+    font-size: 16px;
+    border-color: #edf2f4;
+  }
+  .t_images {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .t_grid_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
 const skills = [
   {
     id: 1,
@@ -87,7 +114,7 @@ const skills = [
 
 const TechComp = () => {
   return (
-    <div className="main_t_container" id="skills">
+    <TechCompStyle id="skills">
       <div>
         <h1 className="t_title">My Skills</h1>
 
@@ -110,13 +137,13 @@ const TechComp = () => {
           ))}
         </Grid>
       </div>
-      <div>
+      {/* <div>
         <StaticImage
           className="t_skill_image"
           src="C:\Users\Allanki Sai Likhitha\gatsby-starter-default\src\images\Problem_solving-cuate__1_-removebg-preview.png"
         ></StaticImage>
-      </div>
-    </div>
+      </div> */}
+    </TechCompStyle>
   )
 }
 export default TechComp

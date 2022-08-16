@@ -2,16 +2,15 @@
   background-color: #edf2f4;
   padding: 60px;
 }
-.e_card_container {
+/* .e_card_container {
   margin: 50px;
   padding: 50px;
   /* background-color: #edf2f4; */
-  width: auto;
+/* width: auto;
   height: auto;
   color: #2b2d42;
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; */
 
 .e_icon {
   width: 451px;
@@ -21,16 +20,20 @@
   text-align: center;
   color: #2b2d42;
   display: flex;
-  justify-content: space-around;
+  gap: 60px;
+  justify-content: center;
   align-items: center;
+  font-size: 40px;
 }
-.e_card {
+/* .e_card {
   background-color: #2b2d42;
   color: #edf2f4;
   padding: 20px;
   width: 400px;
-}
+} */
 .e_company_image {
   width: 100px;
   height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
 }

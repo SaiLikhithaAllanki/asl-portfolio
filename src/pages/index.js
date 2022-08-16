@@ -3,7 +3,7 @@ import * as React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Seo from "../components/Seo"
 // import * as styles from "../components/index.module.css"
 import HeroComponent from "../components/Hero/HeroComponent"
 import AboutMeComp from "../components/AboutMe/AboutMeComp"
@@ -14,6 +14,7 @@ import ExperienceComp from "../components/Experience/ExperienceComp"
 
 const IndexPage = () => (
   <Layout>
+    <Seo></Seo>
     <HeroComponent></HeroComponent>
     <AboutMeComp></AboutMeComp>
 

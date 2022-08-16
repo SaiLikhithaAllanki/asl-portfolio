@@ -7,22 +7,23 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+//import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
 import "./layout.css"
 import NewHeader from "./NewHeader/NewHeader"
+//import { Seo } from "./Seo"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
@@ -48,6 +49,5 @@ export default Layout
 //   maxWidth: `var(--size-content)`,
 //   padding: `var(--size-gutter)`,
 // }}
-{
-  /* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */
-}
+
+/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */

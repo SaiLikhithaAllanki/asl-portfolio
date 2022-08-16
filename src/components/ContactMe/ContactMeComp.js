@@ -1,54 +1,62 @@
-import { TextField } from "@mui/material"
+//import { TextField } from "@mui/material"
 import React from "react"
-import { Paper, Button } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
-import "./ContactMe.css"
+//import { Paper, Button } from "@material-ui/core"
+import { Card } from "@material-ui/core"
 
-const useStyles = makeStyles(() => ({
-  input1: {
-    width: 150,
-  },
-  input2: {
-    height: 200,
-    fontSize: "3em",
-  },
-}))
+import "./ContactMe.css"
+import styled from "styled-components"
+import { Icon } from "@iconify/react"
+
+const ContactMeStyle = styled.div`
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 160px;
+`
+const ContactCards = styled.div`
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+
+  .c_cards {
+    width: 251px;
+    height: 251px;
+    padding: 40px;
+    background-color: #edf2f4;
+  }
+  .git_icon {
+    width: 100px;
+    height: 100px;
+  }
+`
 
 const ContactMeComp = () => {
-  const classes = useStyles()
   return (
-    <Paper className="contact_container" id="contact_me">
+    <ContactMeStyle id="contact_me">
       <h1>Contact Me</h1>
-      <TextField
-        id="outlined-textarea"
-        label="Name"
-        placeholder="Your Name"
-        multiline
-        InputProps={{ classes: { input: classes.input1 } }}
-      />
-      <br></br>
-      <TextField
-        id="outlined-textarea"
-        label="Email"
-        placeholder="Your Email"
-        multiline
-        size="medium"
-      />
-      <br></br>
-      <TextField
-        id="outlined-textarea"
-        label="Message"
-        placeholder="Write here..."
-        multiline
-        rows={4}
-      />
-      <br></br>
-      <Button>Submit</Button>
-      <br></br>
-      <p>Or You can check out my profile on other media</p>
-      <p>LinkedIN</p>
-      <p>GitHub</p>
-    </Paper>
+      <ContactCards>
+        <Card className="c_cards">
+          <Icon
+            icon="fluent:mail-16-filled"
+            color="#2b2d42"
+            className="git_icon"
+          />
+          <h1>Email</h1>
+        </Card>
+        <Card className="c_cards">
+          <Icon
+            icon="bxl:linkedin-square"
+            color="#2b2d42"
+            className="git_icon"
+          />
+          <h1>LinkedIn</h1>
+        </Card>
+        <Card className="c_cards">
+          <Icon icon="bxl:github" color="#2b2d42" className="git_icon" />
+          <h1>GitHub</h1>
+        </Card>
+      </ContactCards>
+    </ContactMeStyle>
   )
 }
 export default ContactMeComp

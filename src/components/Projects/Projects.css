@@ -16,9 +16,8 @@
 .p_card_content {
   background-color: #edf2f4;
   color: #2b2d42;
+  height: auto;
 }
-.Project_image {
-  background-color: #2b2d42;
+.project_image {
   object-fit: cover;
-  width: 345px;
 }

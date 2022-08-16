@@ -24,8 +24,14 @@
   box-shadow: 0 0 2px 1px #2b2d42; */
 }
 .a_main_container {
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
+  gap: 60px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 .a_description {
   font-size: 20px;
